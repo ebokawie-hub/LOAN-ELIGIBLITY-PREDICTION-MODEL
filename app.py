@@ -131,6 +131,3 @@ with st.expander("Which facts matter most to the model?"):
     importances = pd.Series(model.feature_importances_,
                             index=getattr(model, "feature_names_in_", range(model.n_features_in_)))
     st.bar_chart(importances.sort_values(ascending=False))
-
-       import sys
-   print(sys.executable)
